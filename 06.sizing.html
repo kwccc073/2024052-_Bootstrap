@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06.sizing</title>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css />
+</head>
+
+<body>
+    <!-- 
+        .min-vh-100 至少要100vh
+        設定50vh還是會以100vh為主 
+        height超過100vh，例如150vh，會以150vh為主
+    -->
+    <!-- <div class="min-vh-100 bg-dark" style="height: 50vh;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, nisi. Tempora nesciunt ratione corrupti
+        officiis explicabo voluptates hic dolor corporis, voluptatem veritatis unde sed voluptatibus error. Vero placeat
+        tempore aliquam.
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 border">
+                <img class="w-100" src="https://picsum.photos/300/300/?random=10">
+            </div>
+            <!-- 圖片大小超過容器大小時，mw-100才會有作用
+                300*300太小了，不會有作用 -->
+            <div class="col-6 border">
+                <img class="mw-100" src="https://picsum.photos/300/300/?random=10">
+            </div>
+        </div>
+    </div>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
